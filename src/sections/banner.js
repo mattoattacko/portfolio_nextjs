@@ -18,7 +18,7 @@ export default function Banner() {
           </Text>
           <Button variant='primary'>Explore</Button>
         </Box>
-        {/* this is how we set where the L/R blobs are positioned on the page */}
+        {/* this is how we set where the L/R blobs are positioned on the page. Use this area to display feature products */}
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt='banner' />
         </Box>
