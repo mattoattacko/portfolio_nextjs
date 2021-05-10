@@ -266,7 +266,24 @@ export default function Package() {
   };
 
   return (
-    <h1>Package</h1>
+    <section id="pricing" sx={{ variant: 'section.pricing'}}>
+      <Container>
+        <SectionHeader
+          slogan="Pricing Plans"
+          title="So you're goin to Mars..."
+        />
+        <Flex sx={styles.buttonGroup}>
+          <Box sx={styles.buttonGroupInner}>
+          {/* if the monthly plan is currently selected. If the annual plan is selected we want to remove the 'active' class from monthly and give it to the annual plan. We do this by using states */}
+            <button
+              className={'active'}
+            >
+
+            </button>
+          </Box>
+        </Flex>
+      </Container>
+    </section>
   );
 }
 
