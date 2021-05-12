@@ -13,8 +13,8 @@ const packages = {
     {
       id: 1,
       name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
+      description: 'For Small Teams & Offices',
+      buttonText: 'Start Free Trial',
       priceWithUnit: '$0',
       points: [
         {
@@ -45,11 +45,11 @@ const packages = {
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
+      name: 'Business King',
+      description: 'For Enterprise Business',
       priceWithUnit: '$15',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
+      buttonText: 'Create Account',
+      anotherOption: 'Or Start 14 Day Trial',
       points: [
         {
           id: 1,
@@ -81,11 +81,11 @@ const packages = {
       id: 3,
       header: 'Suggested',
       headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
+      name: 'Corporate Scalability',
+      description: 'Elite Level Developers',
       priceWithUnit: '$24',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
+      buttonText: 'Create Account',
+      anotherOption: 'Or Start 14 Day Trial',
       points: [
         {
           id: 1,
@@ -118,8 +118,8 @@ const packages = {
     {
       id: 1,
       name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
+      description: 'For Small Teams & Offices',
+      buttonText: 'Start Free Trial',
       priceWithUnit: '$0',
       points: [
         {
@@ -150,11 +150,11 @@ const packages = {
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
+      name: 'Business King',
+      description: 'Enterprise Business',
       priceWithUnit: '$25',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 10 Days trail',
+      buttonText: 'Create Account',
+      anotherOption: 'Or Start 10 Day Trial',
       points: [
         {
           id: 1,
@@ -186,11 +186,11 @@ const packages = {
       id: 3,
       header: 'Suggested',
       headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
+      name: 'Corporate Scalability',
+      description: 'Elite Level Developers',
       priceWithUnit: '$39',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 10 Days trail',
+      buttonText: 'Create Account',
+      anotherOption: 'Or Start 10 Day Trial',
       points: [
         {
           id: 1,
@@ -241,6 +241,19 @@ const responsive = {
 
 export default function Package() {
   const { monthly, annual } = packages;
+  const [state, setState] = useState({
+    active: 'monthly',
+    pricingPlan: monthly,
+  })
+
+  // So we are calling the handlePricingPlan and specify the plan we want to select. If the selected state is annual, then we set the state to contain the annual plan. So if its not annual, it must be monthly so we set it to monthly.
+  const handlePricingPlan = (plan) => {
+    if(plan === 'annual') {
+      setState({ active: 'annual', pricingPlan: annual })
+    } else {
+      setState({ active: 'monthly', pricingPlan: monthly })
+    }
+  }
 
   const sliderParams = {
     additionalTransfrom: 0,
@@ -276,12 +289,32 @@ export default function Package() {
           <Box sx={styles.buttonGroupInner}>
           {/* if the monthly plan is currently selected. If the annual plan is selected we want to remove the 'active' class from monthly and give it to the annual plan. We do this by using states */}
             <button
-              className={'active'}
+              className={state.active === 'monthly' ? 'active' : ''}
+              type="button"
+              aria-label="Monthly"
+              onClick={() => handlePricingPlan('monthly')}
             >
-
+              Monthly Plan
+            </button>
+            <button
+              className={state.active === 'annual' ? 'active' : ''}
+              type="button"
+              aria-label="Annual"
+              onClick={() => handlePricingPlan('annual')}
+            >
+              Annual Plan
             </button>
           </Box>
         </Flex>
+        <Box sx={styles.pricingWrapper} className="pricingWrapper"> 
+          <Carousel {...sliderParams}>
+            {state.pricingPlan.map((packageData) => (
+              <Box sx={styles.pricingItem} key={packageData.id}>
+                <PriceCard data={packageData} />
+              </Box>
+            ))}
+          </Carousel>
+        </Box>
       </Container>
     </section>
   );
