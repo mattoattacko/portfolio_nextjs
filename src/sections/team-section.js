@@ -18,7 +18,7 @@ const data = [
     imgSrc: Member1,
     altText: 'Donato Yi',
     title: 'Donato Yi',
-    designation: 'CEO and Founder',
+    designation: 'CEO & Founder',
     socialProfile: [
       {
         id: 1,
@@ -43,9 +43,9 @@ const data = [
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Matthew McQuain',
-    title: 'Matthew McQuain',
-    designation: 'Founder',
+    altText: 'Wanda Maximof',
+    title: 'Wanda Maximof',
+    designation: 'Possible Witch',
     socialProfile: [
       {
         id: 1,
@@ -72,7 +72,7 @@ const data = [
     imgSrc: Member3,
     altText: 'Matthew McQuain',
     title: 'Matthew McQuain',
-    designation: 'Web Designer',
+    designation: 'Founder & Web Designer',
     socialProfile: [
       {
         id: 1,
@@ -99,7 +99,7 @@ const data = [
     imgSrc: Member4,
     altText: 'Cole Pritt',
     title: 'Cole Pritt',
-    designation: 'Web Developer',
+    designation: 'Guy We Found on UpWork',
     socialProfile: [
       {
         id: 1,
@@ -124,9 +124,9 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Donato Yi',
-    title: 'Donato Yi',
-    designation: 'CEO and Founder',
+    altText: 'Jiji Mcquain',
+    title: 'Jiji Mcquain',
+    designation: 'Head of Security',
     socialProfile: [
       {
         id: 1,
@@ -151,8 +151,8 @@ const data = [
   {
     id: 6,
     imgSrc: Member6,
-    altText: 'Matthew McQuain',
-    title: 'Matthew McQuain',
+    altText: 'Jakefrom Statefarm',
+    title: 'Jakefrom Statefarm',
     designation: 'Web Designer',
     socialProfile: [
       {
