@@ -16,8 +16,8 @@ const data = [
   {
     id: 1,
     imgSrc: Member1,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
+    altText: 'Donato Yi',
+    title: 'Donato Yi',
     designation: 'CEO and Founder',
     socialProfile: [
       {
@@ -43,8 +43,8 @@ const data = [
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Matthew McQuain',
+    title: 'Matthew McQuain',
     designation: 'Founder',
     socialProfile: [
       {
@@ -70,8 +70,8 @@ const data = [
   {
     id: 3,
     imgSrc: Member3,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Matthew McQuain',
+    title: 'Matthew McQuain',
     designation: 'Web Designer',
     socialProfile: [
       {
@@ -97,8 +97,8 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
+    altText: 'Cole Pritt',
+    title: 'Cole Pritt',
     designation: 'Web Developer',
     socialProfile: [
       {
@@ -124,8 +124,8 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
+    altText: 'Donato Yi',
+    title: 'Donato Yi',
     designation: 'CEO and Founder',
     socialProfile: [
       {
@@ -151,8 +151,8 @@ const data = [
   {
     id: 6,
     imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Matthew McQuain',
+    title: 'Matthew McQuain',
     designation: 'Web Designer',
     socialProfile: [
       {
@@ -177,9 +177,30 @@ const data = [
   },
 ];
 
+// containers center everything
 export default function TeamSection() {
   return (
-    <h1>Team Section</h1>
+    <section>
+      <Container>
+        <SectionHeader
+          slogan="Meet Our Team"
+          title="EPA Certified GMO Free"
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <TeamCard 
+              key={item.id}
+              src={item.imgSrc}
+              altText={item.altText}
+              title={item.title}
+              designation={item.designation}
+              social={item.socialProfile}
+            />
+          ))}
+
+        </Grid>
+      </Container>
+    </section>
   );
 }
 

@@ -4,7 +4,9 @@ import { Text, Heading, Image, Box, Link } from 'theme-ui';
 
 export default function TeamCard({ src, altText, title, designation, social }) {
   return (
-    <h1>TeamCard</h1>
+    <Box sx={styles.card}>
+      <Image src={src} altText={altText} sx={styles.memberThumb} />
+    </Box>
   );
 }
 
