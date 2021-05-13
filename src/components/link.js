@@ -14,6 +14,5 @@ export function Link({ path, label, children, ...rest }) {
     <A {...rest} href={path}>
       {children || label}
     </A>
-
   );
 }

@@ -20,16 +20,16 @@ const data = [
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Whats In The Box??',
+    title: 'Whats In The Box??',
     text:
       'Find out what our dedicated team of code minions can do for your company',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Partnership Deals Available',
+    title: 'Partnership Deals Available',
     text:
       'Find out what our dedicated team of code minions can do for your company',
   },

@@ -15,23 +15,23 @@ const data = [
     altText: 'Fast Performance',
     title: 'Fast Performance',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'In todays business world, there are no days off. Thats why we lock our code monkeys in cages. Humane cages.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Partnership Deals',
+    title: 'Partnership Deals',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Become a Petrolnaut partner and gain access to the code monkey cages. You can feed them amphetamines for faster project completion',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Look At This Box',
+    title: 'Look At This Box',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'I wonder whats inside this box...',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const data = [
     altText: 'Customer Support',
     title: 'Customer Support',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'The monkeys never leave their cages and are waiting for your call 24 hours a day',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function KeyFeature() {
     <Container>
       <SectionHeader
         slogan="we fly higher, together"
-        title="Checkout our Services"
+        title="Checkout Our Services"
       />
 
       <Grid sx={styles.grid}>

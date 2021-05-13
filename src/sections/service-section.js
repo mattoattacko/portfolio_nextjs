@@ -14,7 +14,7 @@ import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Your Buisnesses Goals Are Achievable',
   features: [
     {
       id: 1,
