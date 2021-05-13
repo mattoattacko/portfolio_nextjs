@@ -17,7 +17,7 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar1,
-    name: 'Denny Hilguston',
+    name: 'Daenerys Hilguston',
     designation: '@denny.hil',
     review: 4,
   },
@@ -27,8 +27,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar2,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Jamal Bootibaker',
+    designation: '@bootibaker',
     review: 5,
   },
   {
@@ -37,8 +37,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar3,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'This Handsome Fellow',
+    designation: '@handsomeguy',
     review: 5,
   },
   {
@@ -47,8 +47,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Barack Obama',
+    designation: '@potuswiththemotus',
     review: 4,
   },
 ];
@@ -113,6 +113,23 @@ export default function TestimonialCard() {
           {data.map((item) => (
             <Box sx={styles.reviewCard} key={item.sliderClass}>
               <Rating rating={item.review} />
+              <Heading as='h3' sx={styles.title}>
+                {item.title}
+              </Heading>
+              <Text sx={styles.description}>{item.description}</Text>
+              <div className="card-footer">
+                <div className="image">
+                  <Image src={item.avatar} alt="Our Happy Clients!" />
+                </div>
+                <div className="reviewer-info">
+                  <Heading as="h4" sx={styles.heading}>
+                    {item.name}
+                  </Heading>
+                  <Text sx={styles.designation}>
+                    {item.designation}
+                  </Text>
+                </div>
+              </div>
             </Box>
           ))}
         </Carousel>
