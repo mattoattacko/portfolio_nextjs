@@ -10,25 +10,25 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Full Stack Web Applications',
     text:
       'Find out what our dedicated team of code minions can do for your company',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'On-Boarding Web Designers',
     text:
       'Find out what our dedicated team of code minions can do for your company.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Web Hosting',
     text:
       'Find out what our dedicated team of code minions can do for your company',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'IT Services',
     text:
       'Find out what our dedicated team of code minions can do for your company',
   },
@@ -40,8 +40,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="This is the slogan"
-          title="This is the title"
+          slogan="What We Do"
+          title="workflowJS"
           isWhite={true}
         />
 

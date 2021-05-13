@@ -32,7 +32,6 @@ export default function TextFeature({
           </Button>
         </Link>
       )}  
-
     </Box>
   );
 }
