@@ -124,8 +124,8 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Jiji Mcquain',
-    title: 'Jiji Mcquain',
+    altText: 'Jiji Mittens',
+    title: 'Jiji Mittens',
     designation: 'Head of Security',
     socialProfile: [
       {

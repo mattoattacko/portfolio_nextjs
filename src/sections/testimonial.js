@@ -105,7 +105,7 @@ export default function TestimonialCard() {
       <Container css={{ textAlign: 'center'}}>
         <SectionHeader 
           slogan="Testimonial"
-          title="People Think We Are Neat"
+          title="People Think We're Neat"
         />
       </Container>
       <Box sx={styles.carouselWrapper}>
