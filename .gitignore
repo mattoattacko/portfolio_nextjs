@@ -1,4 +1,5 @@
 node_modules
 .next
 package-lock.json
-out
+# out is just disabled for a git push
+# out
