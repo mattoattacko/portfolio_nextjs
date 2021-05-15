@@ -1,4 +1,4 @@
-## Getting Started
+## Petrolnaut Design Studio
 
 Install the dependencies and run the development server
 
