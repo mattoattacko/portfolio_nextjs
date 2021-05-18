@@ -13,9 +13,9 @@ import Avatar4 from 'assets/testimonial/avatar4.png';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Modern Looks & Trending Designs',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The team did an incredible job on my project!',
     avatar: Avatar1,
     name: 'Daenerys Hilguston',
     designation: '@denny.hil',
@@ -23,9 +23,9 @@ const data = [
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Design Quality & Performance',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The team did an incredible job on my project!',
     avatar: Avatar2,
     name: 'Jamal Bootibaker',
     designation: '@bootibaker',
@@ -33,9 +33,9 @@ const data = [
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'Layout and Organized Layers',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The team did an incredible job on my project!',
     avatar: Avatar3,
     name: 'This Handsome Fellow',
     designation: '@handsomeguy',
@@ -43,9 +43,9 @@ const data = [
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'Such good looking staff',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The team did an incredible job on my project!',
     avatar: Avatar4,
     name: 'Barack Obama',
     designation: '@potuswiththemotus',

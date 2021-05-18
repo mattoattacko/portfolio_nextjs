@@ -29,9 +29,9 @@ const data = [
     id: 3,
     imgSrc: Subscription,
     altText: 'Partnership Deals Available',
-    title: 'Partnership Deals Available',
+    title: 'Experience',
     text:
-      'Find out what our dedicated team of code minions can do for your company',
+      'Petrolnaut code minions are best code minions',
   },
   {
     id: 4,
