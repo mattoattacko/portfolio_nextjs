@@ -7,10 +7,10 @@ import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
   subTitle: 'Core features',
-  title: 'Ya wanna go teh space lad?',
+  title: 'Ya wanna go teh moon lad?',
   description:
-    'Bro we can help get you so high. Like beyond the stratosphere kinda high',
-  btnName: 'Get Started',
+    'WCC can help get you so high. Like beyond the stratosphere kinda high',
+  btnName: 'Lets Go!',
   btnURL: '#',
 };
 

@@ -31,7 +31,7 @@ const data = [
     altText: 'Partnership Deals Available',
     title: 'Experience',
     text:
-      'Petrolnaut code minions are best code minions',
+      'West Coast Creative\'s code minions are are cut above the rest',
   },
   {
     id: 4,

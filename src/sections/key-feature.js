@@ -23,7 +23,7 @@ const data = [
     altText: 'Partnership Deals',
     title: 'Partnership Deals',
     text:
-      'Become a Petrolnaut partner and gain access to the code monkey cages. You can feed them amphetamines for faster project completion',
+      'Become a WCC partner and gain access to the code monkey cages. You can feed them amphetamines for faster project completion',
   },
   {
     id: 3,

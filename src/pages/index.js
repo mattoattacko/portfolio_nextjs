@@ -20,7 +20,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="Petrolnaut Design Studio" />
+          <SEO title="West Coast Creatives" />
           <Banner />
           <KeyFeature />
           <ServiceSection />

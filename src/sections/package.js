@@ -283,7 +283,7 @@ export default function Package() {
       <Container>
         <SectionHeader
           slogan="Pricing Plans"
-          title="So you're goin to Mars..."
+          title="So you're goin to the moon..."
         />
         <Flex sx={styles.buttonGroup}>
           <Box sx={styles.buttonGroupInner}>

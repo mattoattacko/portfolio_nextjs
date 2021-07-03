@@ -1,4 +1,4 @@
-## Petrolnaut Design Studio
+## West Coast Creatives
 
 Install the dependencies and run the development server
 
